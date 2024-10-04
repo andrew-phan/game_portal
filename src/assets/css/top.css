@@ -1,0 +1,720 @@
+.mv {
+  position: relative;
+}
+.mv .mySwiper .swiper-slide a {
+  display: block;
+}
+.mv .mySwiper .swiper-slide a:hover {
+  opacity: 1;
+}
+.mv .mySwiper .swiper-slide img {
+  width: 100%;
+  height: auto;
+}
+.mv .mySwiper .swiper-button-next,
+.mv .mySwiper .swiper-button-prev {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.mv .mySwiper .swiper-button-next:after,
+.mv .mySwiper .swiper-button-prev:after {
+  font-size: 16px;
+}
+.mv .mySwiper .swiper-button-next {
+  right: 0;
+}
+.mv .mySwiper .swiper-button-prev {
+  left: 0;
+}
+.mv .marquee {
+  background-color: rgba(54, 66, 76, 0.46);
+  padding: 10px 0 10px;
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+@media screen and (max-width: 1023px) {
+  .mv .marquee {
+    padding: 5px 0;
+  }
+}
+.mv .marquee .context {
+  position: relative;
+}
+.mv .marquee .context img {
+  position: absolute;
+}
+.mv .marquee .context marquee {
+  font-size: 14px;
+  margin-left: 30px;
+  color: #fff;
+}
+@media screen and (max-width: 1023px) {
+  .mv .marquee .context marquee {
+    font-size: 12px;
+  }
+}
+
+* {
+  font-family: Roboto, sans-serif !important;
+}
+
+.wrap-home {
+  box-sizing: border-box;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.home {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-bottom: 80px;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1023px) {
+  .home {
+    max-width: 100%;
+    overflow: hidden;
+  }
+}
+.home > div {
+  margin-top: 20px;
+}
+
+.home .section-title {
+  color: #212947 !important;
+  display: block;
+  font-size: 40px !important;
+  font-weight: 700 !important;
+  height: auto !important;
+  text-align: center;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYkAAABeCAMAAADhTxisAAAAclBMVEUAAACdbf+XZv+Wav+cZ/+YZP+eYf+ZY/+aZv+aZf+OYv+WZP+cYP+JYv+VY/+fYv+4kv/Ksf+WZf+fbP+fZv/FqP+aZ/+6mf+baf/Gqf+4lv/Ms//FqP/Lsv+uhP/Epv+/n//Lsf/Irf+0j//Jrf/Ms/87I7Q4AAAAJXRSTlMABA8GCSkULSMbHSQWCCoLWtIfERiVMFw2n2f1pOZCiXjbv1Cyv42QTgAABGVJREFUeNrt3ety0zAQhmHk81mJ7JgkFKcHcv+3yO4qbgKBkDrGEsz3DsOv8sfPrFSHVvqEEEL/RArN0sMIIZopwlAPOURoluqaHuYkC8ugtQ7QDNGDJA4ZjQkQESm0CZqjliKPqGaLD0MEQZJ0OXqwgv/quq5KRouPUAhEW3WFybJSytBDGVPkhGEtlLp/JCyEKeO4aZq0aWL0WGXJGDIY91vISOig6jbHn/uSook1pJGNFvW9a5SMRGc2RzRbXw59wxYm7+6fC5FIigwSs/aVLWKai7yye/cd73q0ONFIlFidZqmX9muyeE6tRccWUfTHb2mVqmlxymKWeN1Tn8dWMfpgDScezy/H48vZIgl4v7htocI6SPKsYYmn7baXoSrRxOjRMQhhPH8li30qe3fOc3H7VU+2CZaIrUSfyqaPpmdMlrFG2h/IYr1Pm3eLQLPFTYlxJghC/lGCplVRXZ6TRkkW28MXWvJXFxb61vdRFxK7Ps54g2kDNK2WShLCKE4WG7Z4I4uMLZLzGnV7ddo1paGvJjg0Na0ZhDAKY8RiRxbf2KK8srghQSNRyVeiidX0RzhaGgw7F8MTWwy8d5viYu++LUEjEUS1Qo8U2v9kkLkoyzhNh2/0dvY0yLe0di4i2S5uSJQFidHrIHokwajZIulO+8UbW+yGtLl8vRCKa4nh5fg8lLw4QWIOjMu5iNnilSw22/fX7pHiWiJdH1cNS0SQmNGiFQuZixVbHLYpW+S0C8g2AIm/n/pk16h2nIs0/bw+fTRYGjNSQGKBxMLOBb/r0Vik9qNBssiYQtchJBboeo2iuRg/GqSx6GhPDpWCxEKp8N1CXvXGjwb504w2iELMxGKp0aKqcjsWW/locDB5QhKYieU6W8jWzRT80eCKX950DYkFE4vafgSSE0VPFGuSMLQ81SEklk3mQmtLYSXizC5PkFg2saiDoOJn3Z8lakgsn1JE0XZF1vS9SBRJoDETTlI1P2xDQyFPGxLusj/SFDf9+LQ1Vic3Kf7J16KEhPPoafOeDQnnWQn7tGNIuOlaIoOEu8bVCRIfDBL/bZDwJUj4EiR8CRK+BAlfgoQvQcKXIOFLkPAlSPgSJHwJEr4ECV+ChC9Bwpcg4UuQ8CVI+BIkfAkSvgQJX4KEL0HCl+6RePt63LxBYkJTJFb8tM8S12fZ4ASVCU2QiHf0tDcnCZwq5CIVapIoG5EorQRO2nJRGOm2Mj9K4PQ5BxGE/T27SwmcyOggrU+/e3opgVNKHdTKgRFx2j+9S4Q4uddFFUFkcdNvLyQUTrN2kTElQ4wSCUvghHcHyXmABGElskK+UcWtB0uXfrbtqVeRsCeo4CaQpRuOP7axpwrhdhznbexJW7gxynmbXDZs3KK2cNer06HixUnhZkE3yQPm6+5MLgfGKoXbNp1USpncrmZP7sUNtG4bb39UCrcyu60db37ETeVu05odCAK397tObhkUiF9boMUSh9+n0DLhJwUQQv9I3wE1DWQVcSwY0gAAAABJRU5ErkJggg==) 50% no-repeat;
+  position: relative;
+  line-height: 94px;
+  transform: scale(0.65);
+  transform-origin: 50% 80%;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1023px) {
+  .home .section-title {
+    background-size: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+}
+.home .section-title:before {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAAAnCAMAAADO1UqNAAABdFBMVEUAAADg0P/cy//k1v/YxP/fz//e0v/j1f/m1//NtP/Qt//Su//VwP/SvP/iz//NtP/NtP/Wwf/UvP/cy//v4f/NtP/byv/gz//Ruf/j0//NtP/byP/Otf/Ptf/Xw//j1f/eyv/MtP/Otf/Otf/YxP/Zxv/Otv/ey//f0P/Tvf/Ntf/NtP/Ruv/ax//g0f/h0v/h0v/h0v/g0f/QuP/Otf/NtP/Tvf/cyv/Ru//Wwf/Xw//Xw//cy//dzP/Otf/fz//j1P/j1P/Zyf/SvP/Pt//TvP/Wwf/fzf/f0P/Otv/Yw//Tvv/Vv//Ot//Xwv/YxP/Uvv/YxP/Zxv/NtP/ax//Yw//OtP/Otf/i0//QuP/NtP/Ruf/NtP/Su//NtP/Tvf/Uvv/Quf/VwP/ezv/ezf/TuP/Ruv/Ruv/SvP/NtP/NtP/Uvf/Ntf/ayP/Ntf/m1v/VwP/NtP/Wwv/Ns//byf/Ntv/Pt//NtP/NtP/OtP/WwP/Ms/8vAdj5AAAAe3RSTlMADBQPHRYGCgj1NC8hKxj5xSclWgT+Xz4yHsBnOTYjEhH86Lt9b7dVOinx1KZrNjMvLBsZ7eSYYy2mmXhSTUhHJCEaxrKdhkpCQB+7sKufk4+Nh4aBc2FZJ9/f2trMzMC2rotPRA/V0aGfl5N/eHIoq46BeHNP46ZpU4Rs318lAAADIklEQVR42u3Z218SQRTA8SOVioqggqVpsliW0B0ou1GZWVqUZUqZWVpWmlmmpnb++XbOzM7sheq54Xxf4GHffjvzmTkLzG4dwBpNJbkNrLFU4ohc3XLdEDAVx+EMbgKz2LwzH2q+DvNc3Wpu30wt1By4utXcuiPo1HzN10DYz+A+MCvRit7W1QeoOdnHDFe3Ui1D5/QNdA6oeV405+pWqzmiua4+mMc9MDYxMw/MMm7zDZBmMbnbRs25utUOqLmu7sRFc65uNWpurCGm0hCyLa5zzBq7SZwFo72EmKxAtLrD1a0Raj5WwupWveobXN0alWDzRA4n0rCF8brVD4BZwG2+FWreDADrGJ/i6pYKNR/N4YhoHqlurnOgpV3NrlbS4moSVg+RbHZIiMViR0gnuSz0SXeVO+Ql+SZcki4qF5TzyhnPUeMh+UBukwfklvLedVM67enRent6javkuHZOOeWZ89zwOWn8kH4Jk54VZWZlxvNFueJ33/isnA2okmVlYnlCGdGGffq1lFagjypal27+z+okLZOL3ETGzurWMrPpHEwczqvTmrCBpsGelFK3DHfUAQMFg/V25nbIV0Ume6FNTj7XnmlPtes+T7RrPt+lx9o7zyPtreee8cbzSfmovPa88vwkOaXkyUtxkownBcdxMi5ELMUCt3GsgVLMYwrCEnGswl+kteaQVr8Wn6YovWFEZaUhEhPkH+NIVCcpjndK44b7Oh7+oz4yLXWEnQjodtGv1hUx6pOIGPNpr+9YVFtdgyEDAZUCLmXrruRYAQsxIOHdn/3niou4tBqtXr95Fze3Q53qFYDsEhaKENJdxuFWYBYIVxeDGbf5Ije32eEFTDUFqy/Wad5Rxv4WYJYIV19HLHNz20271U3Q1RSaK7p5hJtbxr+Mm1K4sEbVI5sBswpV182naRzHzW3nHc1b+kVzALnWzQE/tQrMOlRdNC93AMjqA75LHTe3khi3ZWVzVT0/wM1tN5rDPJa7wbOH+UHRnMbzzFKJnGpuqrfREJ6bWyxRGAWiq5cq9OGFNY50FZGbN5p0lZs3nvRWERgD+A2TVXNwgbQ9IwAAAABJRU5ErkJggg==) 50% no-repeat;
+  margin-left: -452px;
+}
+
+.home .section-title:after,
+.home .section-title:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 498px;
+  height: 38px;
+}
+
+.home .section-title:after {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAAAnCAMAAADO1UqNAAABmFBMVEUAAADNs//Tvf/Quf/Wwv/XxP/QuP/Ntf/Vv//axv/j1P/byf/i1f/cz//v5f/ezP/g0P/h0f/j1P/l0//NtP/j1v/dy//n1v/ezf/g0P/i1f/j2P/ax//fzv/l2P/NtP/f0f/k2P/byv/ezv/ezv/Otf/NtP/gz//Qtv/Otf/NtP/n1v/Su//Otv/Zxv/OtP/dy//NtP/NtP/ayP/Xw//XxP/Ns//Uv//Otv/Uvv/Wwv/Ntf/PuP/Quf/Ruf/Su//NtP/Otf/YxP/Ruf/axv/ax//Vvv/NtP/VwP/cyv/Ntf/Pt//Qu//NtP/Tvf/Uvv/Ntf/VwP/Otv/Ptv/Ptv/Quf/Ruv/Uvf/cyf/WwP/cy//dy//byf/h0f/QuP/VuP/NtP/Uvv/NtP/Wwv/Yw//Tu//SvP/NtP/NtP/byf/Yxv/Otf/Otv/RuP/MtP/Su//TvP/NtP/Xw//Ruf/Ntf/dzf/OtP/ezv/Zxf/g0P/Otf/h0f/VwP/Wwf/ezv/f0P/OtP/Otv/Wwf/Otf/NtP/Otv/Otv/Ms/+ATeHvAAAAh3RSTlMA/UlJRkRIRkhBBjsZCgQ1JiMeCPkWNwwyLBwSPzAQ9iEOPS4q5twoGe3hFA7pimA5x7N3WVS4spp0X/Hh29XPzJSRhoN+bm5pZ2YoFdHCuK+tp6KekIt5bWRiXU9DHRLXvb2elYJ+fnhySS8kINTKxsOalnNZVlRNR0I+qaVRS/Srok6LPDcXoDuiAAADXklEQVR42u3YZ1sTQRDA8T1BmgZLomLFRoRT1KAiigVEjRKwUKwIiCgoAUUQsaOU+drO7czeXtoHYDM/diF5yLv/3D55VhUxq0S5GWqdUaK8dABI9TLTAY3z0JpROTJKOAybf69rz6s+lVhVwlnd2FwprN6UiTQHSFQo4SjdHMWj1afBa4NElRJOwubVSotPUHVqvoT/SVQr4aBhLmuqZ7n5OZoHqe6gtZwzPEbVF6k5n/zCMWvm25qt7mepuVR3FDZfVTli89BCzUmHVHeMbW7FkuBNKyXVHdVjm1tp8MCfzam+sq6EI4o27wUvnQJ/VFlDUt0ZU5BYKmzuQa86k4KkVHdRqeZppQqqD0LnhhKb3hR4JZtj9S5INkt1x0wXa36OmxdWrx+AztR8O2ljj8jfwAAbJENaR2BB6+7uXhhmT4we8pa9Y0+NK9bd0L3Qc+OqdTHiUsRIYHlkWfvAKslWVMsOoeNoGzmP9gZ2kIbAYXIC7ddOklOBncYucpTtZgfI9og97DQ5aBxhx9g+IxaKa3VR9ZbKFe8Hn5tacR+SsRInQSYBCfA8XAnSqK2sdGotrJU0addC10M3QjdDH8kn8sB4zR4al63Hxk/tl/Yv8IZ9JpPk1uQt42zU7dCd0IWI9+yZcT/0wnhpfCFfyW8NR+2P9o28Mn4Qmi4aLZ4qRCPF88STFM5QODp2YGhQeEB4LHgYovXH+mG8oHrWhwmqThex1qwP8xvr1cVVVVXRzlMR7IoK2nm2bMFNv3Ax+7oGV00NbvOa31bWGPiE4g7QO7KVn9xKvXLV6l2b41Cw2XH9g381rIHLOI9dqAzRiXAZDexwA58CGI3sN+gwwISB8DjAZdgTgRzgU6HogcCZtcg5kP/4c3Kjrx/m+gqqN8FEvETzfUpsen1zpaunC5qnpLkTsHp/QfVMUB2b9yprNAmpM0o4Iag+VqT6uDR3WPN4seqd4KWlubuwetdY4QUNtNfZjyShS5o7harnNe9phbY6ae4uipp3ETvD1c1QCMdQ9byL2JkWaKuX5u7iL2qm+aJSVP1Rvf6iJ82dxNVtc1O9eU6aO2vUx+rUfFopW70xuLwRjqKr9SVubqvPSXOHBdX5Obc2UtLcaVgdYEqJspL1pXn5yS4qIYRb/gO5qom/F3tEvQAAAABJRU5ErkJggg==) 50% no-repeat;
+  margin-left: 452px;
+}
+
+.home .popularBettingNewTheme {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 -10px;
+}
+
+.home .popularBettingNewTheme > .popularBetting {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 0 0 0 transparent, inset 0 -1px 3px 0 rgba(0, 0, 0, 0.11), 0 0 8px 0 rgba(0, 0, 0, 0.12);
+  flex: 0 29%;
+  margin: 10px 10px 0;
+  padding: 20px 5px 20px 15px;
+  position: relative;
+  height: auto;
+  overflow: hidden;
+  max-width: calc((100% - 60px) / 3);
+  flex-basis: calc((100% - 60px) / 3);
+  box-sizing: border-box;
+}
+
+.home .popularBettingNewTheme > .popularBetting .countdown-wp {
+  background-image: linear-gradient(180deg, #ff598e, #ff2d55);
+  border-radius: 0 16px 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+  height: 32px;
+}
+
+.home .iconfont {
+  font-family: iconfont !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.home .popularBettingNewTheme > .popularBetting .countdown-wp .icon-icon_clock {
+  display: none;
+}
+
+.home ._timeDown {
+  color: #fff;
+}
+
+.home .popularBettingNewTheme > .popularBetting .popularBetting-inner .image-wrapper {
+  background: #f8f9fa;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+}
+
+.home .popularBettingNewTheme > .popularBetting .popularBetting-inner .image-wrapper img {
+  width: 66px;
+  height: 66px;
+}
+
+.home .popularBettingNewTheme > .popularBetting .popularBetting-inner .lottery-info-wp {
+  flex: 1;
+  max-width: calc(100% - 66px);
+}
+
+.home .popularBettingNewTheme > .popularBetting .popularBetting-inner .lottery-info-wp .lottery-name {
+  background: #f8f9fa;
+  color: #677684;
+  font-size: 16px;
+  padding: 10px 15px;
+}
+
+.home .popularBettingNewTheme > .popularBetting .popularBetting-inner .lottery-info-wp .play-info-wp {
+  display: flex;
+  justify-content: start;
+  margin: 15px 20px 10px 0;
+}
+
+.home .popularBettingNewTheme > .popularBetting .popularBetting-inner .lottery-info-wp .play-info-wp div {
+  background: #f8f9fa;
+  border-radius: 12px;
+  color: #90a2dc;
+  font-size: 13px;
+  margin-right: 10px;
+  padding: 8px 16px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.home .popularBettingNewTheme > .popularBetting .popularBetting-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin: 5px 0;
+}
+
+.home .popularBettingNewTheme > .popularBetting .popularBetting-inner .dice-wp {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home .popularBettingNewTheme > .popularBetting .popularBetting-inner .dice-wp div:first-child {
+  margin-left: 0;
+}
+
+.home .popularBettingNewTheme > .popularBetting .popularBetting-inner .dice-wp .open_results {
+  background-image: linear-gradient(127deg, #7146ff, #4a69ff);
+  border: 1px solid hsla(0, 0%, 100%, 0.6);
+  border-radius: 4px;
+  width: 40px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.home .popularBettingNewTheme > .popularBetting .popularBetting-inner .dice-wp div {
+  margin-left: 5px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home .popularBettingNewTheme > .popularBetting .popularBetting-inner .dice-wp .name {
+  background-image: none;
+  box-shadow: inset 0 -1px 2px 0 #8e9fda, inset 0 1px 2px 0 #8d9ed9;
+  color: #8fa1dc;
+}
+
+.home .popularBettingNewTheme > .popularBetting .popularBetting-inner .dice-2,
+.home .popularBettingNewTheme > .popularBetting .popularBetting-inner .dice-22,
+.home .popularBettingNewTheme > .popularBetting .popularBetting-inner .dice-222 {
+  background-size: 100% !important;
+  background: url(/image/home/dice-4.png) 50%;
+}
+
+.home .popularBettingNewTheme > .popularBetting .popularBetting-inner .dice-6,
+.home .popularBettingNewTheme > .popularBetting .popularBetting-inner .dice-66,
+.home .popularBettingNewTheme > .popularBetting .popularBetting-inner .dice-666 {
+  background-size: 100% !important;
+  background: url(/image/home/dice-6.png) 50%;
+}
+
+.home .popularBettingNewTheme > .popularBetting .popularBetting-inner .dice-5,
+.home .popularBettingNewTheme > .popularBetting .popularBetting-inner .dice-55,
+.home .popularBettingNewTheme > .popularBetting .popularBetting-inner .dice-555 {
+  background-size: 100% !important;
+  background: url(/image/home/dice-5.png) 50%;
+}
+
+.home .popularBettingNewTheme > .popularBetting .popularBetting-inner .dice-1,
+.home .popularBettingNewTheme > .popularBetting .popularBetting-inner .dice-11,
+.home .popularBettingNewTheme > .popularBetting .popularBetting-inner .dice-111 {
+  background-size: 100% !important;
+  background: url(/image/home/dice-4.png) 50%;
+}
+
+.home .popularBettingNewTheme > .popularBetting .popularBetting-inner .dice-4,
+.home .popularBettingNewTheme > .popularBetting .popularBetting-inner .dice-44,
+.home .popularBettingNewTheme > .popularBetting .popularBetting-inner .dice-444 {
+  background-size: 100% !important;
+  background: url(/image/home/dice-4.png) 50%;
+}
+
+.home .popularBettingNewTheme > .popularBetting .popularBetting-inner .betting {
+  background-image: linear-gradient(104deg, #7146ff, #4a69ff);
+  box-shadow: inset 0 1px 4px 0 hsla(0, 0%, 100%, 0.4);
+  box-shadow: inset 0 -2px 4px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px 30px 0 0;
+  padding: 8px 16px;
+  width: 20%;
+  height: 20px;
+  overflow: hidden;
+}
+
+.home .popularBettingNewTheme > .popularBetting .popularBetting-inner .betting span {
+  display: block;
+  font-size: 14px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.home .popularBettingNewTheme > .popularBetting .popularBetting-inner .betting span:before {
+  padding-right: 5px;
+}
+
+.home .fa-bolt-lightning {
+  color: #fff;
+  font-size: 12px;
+  margin-right: 5px;
+  font-family: fontawesome !important;
+}
+
+.home .popularBettingNewTheme > .popularBetting .popularBetting-inner .open-numbers {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 270px;
+  width: 80%;
+}
+
+.home .popularBettingNewTheme > .popularBetting .popularBetting-inner .open-numbers .ball {
+  background: url(/image/home/ball.png) no-repeat 50%/120%;
+  border-radius: 50%;
+  color: #292b31;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  margin: 3px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.home .time {
+  padding: 0px 10px;
+  font-size: 14px;
+}
+
+.home .swiper-slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+}
+
+.home .swiper .swiper-slide .game + .game {
+  margin-top: 30px;
+}
+
+.home .game {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 0 0 0 transparent, inset 0 -1px 3px 0 rgba(0, 0, 0, 0.11), 0 0 8px 0 rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  display: flex;
+  flex: 0 13%;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
+.home .game .ani-container {
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  bottom: 0;
+  transform: translateY(5px);
+  overflow: hidden;
+}
+
+.home .game > div,
+.home .game > img {
+  pointer-events: none;
+}
+
+.home .game .el-image {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.home .el-image__inner {
+  vertical-align: top;
+}
+
+.home .el-image__error,
+.el-image__inner,
+.el-image__placeholder {
+  width: 100%;
+  height: 100%;
+}
+
+.home .game .btn-enterGame {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.4s;
+}
+
+.home .game > div,
+.home .game > img {
+  pointer-events: none;
+}
+
+.home .game .btn-enterGame button {
+  background: #4a69ff;
+  border-radius: 32px;
+  color: #dfdfe0;
+  display: none;
+}
+
+.home .el-button {
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #dcdfe6;
+  color: #90a2dc;
+  text-align: center;
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  transition: 0.1s;
+  font-weight: 500;
+  padding: 12px 20px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.home .game .gameName {
+  background: #d5d6d8;
+  color: #313236;
+  border-radius: 0 0 16px 16px;
+  font-size: 14px;
+  padding: 8px 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  transition: all 0.4s;
+}
+
+.home .swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home .swiper-container {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+}
+
+.home .third-party-wp .swiper-game-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+  max-width: 1280px;
+  width: 100%;
+}
+
+.home .third-party-wp {
+  position: relative;
+  margin: 10px auto;
+  width: 1280px;
+  max-width: 100%;
+}
+
+.home .game:hover .gameName {
+  background: #cfb892;
+  color: #ffffe3;
+}
+
+.home .game:hover .btn-enterGame button {
+  display: block;
+}
+
+.home .game .btn-enterGame button {
+  background: #4a69ff;
+  border-radius: 32px;
+  color: #dfdfe0;
+  display: none;
+}
+
+.home .third-party-wp .swiper-button-next,
+.home .third-party-wp .swiper-button-prev {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  cursor: pointer;
+}
+
+.home .third-party-wp .swiper-button-prev {
+  left: -90px;
+}
+
+.home .third-party-wp .swiper-button-next,
+.home .third-party-wp .swiper-button-prev,
+.home .third-party-wp .swiper-button {
+  background: hsla(0, 0%, 94.1%, 0.6);
+  border-radius: 50%;
+  border: none !important;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+  color: rgba(144, 148, 163, 0.6);
+  width: 72px;
+  height: 72px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.home .swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+  left: 10px;
+  right: auto;
+}
+
+.home .swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  width: calc(var(--swiper-navigation-size) / 44 * 27);
+  height: var(--swiper-navigation-size);
+  margin-top: calc(var(--swiper-navigation-size) * -1 / 2);
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--swiper-navigation-color, var(--swiper-theme-color));
+}
+
+.home .third-party-wp .swiper-button-next:after,
+.home .third-party-wp .swiper-button-prev:after {
+  font-size: 16px;
+}
+
+.home .third-party-wp .swiper-button-next:after,
+.home .third-party-wp .swiper-button-prev:after,
+.home .third-party-wp .swiper-button:after {
+  font-size: 16px;
+}
+
+.home .swiper-button-prev:after,
+.home .swiper-container-rtl .swiper-button-next:after {
+  content: "prev";
+}
+
+.home .swiper-button-next:after,
+.home .swiper-button-prev:after {
+  font-family: swiper-icons;
+  font-size: var(--swiper-navigation-size);
+  text-transform: none !important;
+  letter-spacing: 0;
+  text-transform: none;
+  font-variant: normal;
+  line-height: 1;
+}
+
+.home .third-party-wp .swiper-button-next,
+.home .third-party-wp .swiper-button-prev {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  cursor: pointer;
+}
+
+.home .third-party-wp .swiper-button-next {
+  right: -90px;
+}
+
+.home .third-party-wp .swiper-button-next,
+.home .third-party-wp .swiper-button-prev,
+.home .third-party-wp .swiper-button {
+  background: hsla(0, 0%, 94.1%, 0.6);
+  border-radius: 50%;
+  border: none !important;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+  color: rgba(144, 148, 163, 0.6);
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.home .swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+  right: 10px;
+  left: auto;
+}
+
+.home .swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  width: calc(var(--swiper-navigation-size) / 44 * 27);
+  height: var(--swiper-navigation-size);
+  margin-top: calc(var(--swiper-navigation-size) * -1 / 2);
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--swiper-navigation-color, var(--swiper-theme-color));
+}
+
+.home .third-party-wp .swiper-button-next:after,
+.home .third-party-wp .swiper-button-prev:after {
+  font-size: 16px;
+}
+
+.home .third-party-wp .swiper-button-next:after,
+.home .third-party-wp .swiper-button-prev:after,
+.home .third-party-wp .swiper-button:after {
+  font-size: 16px;
+}
+
+.home .swiper-button-next:after,
+.swiper-container-rtl .swiper-button-prev:after {
+  content: "next";
+}
+
+.home .swiper-button-next:after,
+.swiper-button-prev:after {
+  font-family: swiper-icons;
+  font-size: var(--swiper-navigation-size);
+  text-transform: none !important;
+  letter-spacing: 0;
+  text-transform: none;
+  font-variant: normal;
+  line-height: 1;
+}
+
+.home .third-party-wp .swiper-button-next.swiper-button-disabled,
+.home .third-party-wp .swiper-button-prev.swiper-button-disabled {
+  opacity: 0.35;
+  cursor: auto;
+  pointer-events: none;
+}
+
+.home .swiper-slide-second {
+  margin-top: 30px;
+}
+
+@media (max-width: 1023px) {
+  .home {
+    padding-bottom: 40px;
+  }
+  .home .popularBettingNewTheme {
+    display: block !important;
+  }
+  .home .popularBettingNewTheme > .popularBetting {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+  .home .popularBettingNewTheme > .popularBetting .popularBetting-inner .dice-wp .open_results {
+    width: 30px;
+    height: 30px;
+  }
+  .home .popularBettingNewTheme > .popularBetting .popularBetting-inner .dice-wp div {
+    width: 30px;
+    height: 30px;
+  }
+  .home .popularBettingNewTheme > .popularBetting .popularBetting-inner .betting {
+    margin: 0;
+  }
+  .home .game {
+    height: auto;
+  }
+  .home .swiper .swiper-slide {
+    margin-top: 20px;
+  }
+  .home .swiper-slide-second {
+    margin-top: 0;
+  }
+  .home .popularBettingNewTheme > .popularBetting .popularBetting-inner .open-numbers .ball {
+    width: 28px;
+    height: 28px;
+  }
+}
