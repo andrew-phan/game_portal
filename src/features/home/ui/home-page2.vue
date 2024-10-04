@@ -15,13 +15,12 @@
         <div class="swiper-button-next pc"></div>
         <div class="swiper-button-prev pc"></div>
       </div>
-      <div class="marquee-wrapper marquee current">
+      <!-- <div class="marquee-wrapper marquee current">
         <div class="context inner">
           <img src="/image/Desktop/home/icon01.png" width="18px" height="18px" alt="" class="marquee-icon">
-          <!-- <marquee>This text will scroll from right to left</marquee> -->
+          <marquee>This text will scroll from right to left</marquee>
         </div>
-      </div>
-
+      </div> -->
     </div>
     <div class="menu-sp sp">
       <ul class="list">
@@ -110,7 +109,7 @@
                             <canvas width="260" height="260" style="background-color: transparent;"></canvas>
                           </div>
                           <div class="el-image">
-                            <img :src="game.img_url" class="el-image__inner" :alt="game.name">
+                            <img :src="game.img_url" class="el-image__inner">
                           </div>
                           <div class="btn-enterGame">
                             <button type="button" class="el-button el-button--default">
@@ -147,6 +146,4 @@
     featureGames
   } = useHome()
 </script>
-<style>
-  @import url('~/assets/css/top.css');
-</style>
+<style scoped></style>

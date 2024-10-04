@@ -42,7 +42,7 @@
     <div class="header02 pc">
       <div class="inner">
         <div class="logo">
-          <a href="#/index" class="router-link-exact-active router-link-active"><img
+          <a href="/" class="router-link-exact-active router-link-active"><img
               src="https://cms.t79.bet/storage/uploads/config/202409/25/config_1727248104_7vGCKJpUyb.png"
               alt="logoName"></a>
         </div>
@@ -81,7 +81,7 @@
     <div class="header03 sp">
       <div class="inner">
         <div class="logo">
-          <a href="#/index" class="router-link-exact-active router-link-active"><img
+          <a href="/" class="router-link-exact-active router-link-active"><img
               src="https://cms.t79.bet/storage/uploads/config/202409/25/config_1727248104_7vGCKJpUyb.png"
               alt="logoName"></a>
         </div>

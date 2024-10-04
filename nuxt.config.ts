@@ -14,10 +14,6 @@ export default defineNuxtConfig({
   css: [
     '~/assets/css/style.css',
     '~/assets/css/swiper/swiper-bundle.min.css',
-    '~/assets/css/top.css',
-    '~/assets/css/sport.css',
-    '~/assets/css/no-hu.css',
-    '~/assets/css/casino.css',
   ],
   experimental: {
     renderJsonPayloads: false
