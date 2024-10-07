@@ -17,7 +17,7 @@
       </div>
       <div class="marquee-wrapper marquee current">
         <div class="context inner">
-          <img src="/image/Desktop/home/icon01.png" width="18px" height="18px" alt="" class="marquee-icon">
+          <img src="/image/desktop/home/icon01.png" width="18px" height="18px" alt="" class="marquee-icon">
           <!-- <marquee>This text will scroll from right to left</marquee> -->
         </div>
       </div>

@@ -2,32 +2,32 @@
   <footer class="footer">
     <div class="footer-wrapper">
       <div class="inner">
-        <img src="/image/Desktop/footer/asia-gaming.png" alt="">
-        <img src="/image/Desktop/footer/board-game.png" alt="">
-        <img src="/image/Desktop/footer/ebet.png" alt="">
+        <img src="/image/desktop/footer/asia-gaming.png" alt="">
+        <img src="/image/desktop/footer/board-game.png" alt="">
+        <img src="/image/desktop/footer/ebet.png" alt="">
 
-        <img src="/image/Desktop/footer/pg-pocket-game-soft.png" alt="">
-        <img src="/image/Desktop/footer/sports.png" alt="">
-        <img src="/image/Desktop/footer/wm.png" alt="">
-        <img src="/image/Desktop/footer/gameplay.png" alt="">
-        <img src="/image/Desktop/footer/joker.png" alt="">
-        <img src="/image/Desktop/footer/xicg.png" alt="">
-        <img src="/image/Desktop/footer/s128.png" alt="">
+        <img src="/image/desktop/footer/pg-pocket-game-soft.png" alt="">
+        <img src="/image/desktop/footer/sports.png" alt="">
+        <img src="/image/desktop/footer/wm.png" alt="">
+        <img src="/image/desktop/footer/gameplay.png" alt="">
+        <img src="/image/desktop/footer/joker.png" alt="">
+        <img src="/image/desktop/footer/xicg.png" alt="">
+        <img src="/image/desktop/footer/s128.png" alt="">
       </div>
     </div>
     <div class="footer-wrapper-two">
       <div class="inner">
         <div class="brand-two">
-          <section><img src="/image/Desktop/footer/malta-gaming.svg" class="brand_svg">
+          <section><img src="/image/desktop/footer/malta-gaming.svg" class="brand_svg">
             <p>Chứng nhận Giấy phép Malta (MGA)</p>
           </section>
-          <section><img src="/image/Desktop/footer/british-virgin-islands.svg" class="brand_svg">
+          <section><img src="/image/desktop/footer/british-virgin-islands.svg" class="brand_svg">
             <p>Chứng nhận Quần đảo Virgin thuộc Anh (BVI)</p>
           </section>
-          <section><img src="/image/Desktop/footer/gambling-commission.svg" class="brand_svg">
+          <section><img src="/image/desktop/footer/gambling-commission.svg" class="brand_svg">
             <p>Ủy ban Giám sát GC Anh</p>
           </section>
-          <section><img src="/image/Desktop/footer/phi.svg" class="brand_svg">
+          <section><img src="/image/desktop/footer/phi.svg" class="brand_svg">
             <p>Philippines (PAGCOR) giám sát giấy phép</p>
           </section>
         </div>

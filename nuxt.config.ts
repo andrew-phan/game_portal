@@ -1,4 +1,5 @@
 import AutoImport from 'unplugin-auto-import/vite'
+import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -10,10 +11,16 @@ export default defineNuxtConfig({
     '@nuxt/eslint', 
     '@pinia/nuxt',
     '@pinia/nuxt',
+    (_options, nuxt) => {
+      nuxt.hooks.hook('vite:extendConfig', (config) => {
+        // @ts-expect-error
+        config.plugins.push(vuetify({ autoImport: true }))
+      })
+    },
   ],
   css: [
     '~/assets/css/style.css',
-    '~/assets/css/swiper/swiper-bundle.min.css',
+    '~/assets/css/swiper-bundle.min.css',
   ],
   experimental: {
     renderJsonPayloads: false
@@ -44,6 +51,14 @@ export default defineNuxtConfig({
         ],
         dts: './src/@types/auto-imports.d.ts',
       })
-    ]
-  }
+    ],
+    vue: {
+      template: {
+        transformAssetUrls,
+      },
+    }
+  },
+  build: {
+    transpile: ['vuetify'],
+  },
 })
